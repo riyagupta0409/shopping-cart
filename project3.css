@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,400&display=swap');
+body {
+    padding: 0;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    transition: 0.4s;
+    background-color: #ffffff;
+    z-index: 100;
+    overflow-x: hidden;
+    /* border-left: 5px solid #f08632; */
+    overflow-y: auto;
+}
+
+.cart .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    color: #f08632;
+}
+
+.place_order_button {
+    background: linear-gradient(to right, #f5914e, #e85826);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    /* font-size: 1.2em; */
+}
+
+.coupon_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.coupon_button:hover {
+    border: none;
+}
+
+.cart .closebtn:hover {
+    text-decoration: none;
+    transform: scale(1.2)
+}
+
+.f-1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+.f-2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.cart-small {
+    background: linear-gradient(to right, #f5914e, #e85826);
+}
+
+.cart-small button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand.abs {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    /* .cart-small {
+        display: none;
+    } */
+}
+
+
+/* @media (max-width: 767px) {
+    .cart-large {
+        display: none;
+    }
+} */
+
+@media (min-width:992px) {
+    .b {
+        border-right: 1px solid rgb(138, 137, 137);
+    }
+}
+
+.hover-1 a:hover {
+    background-color: #000;
+    text-decoration: none;
+}
+
+.carousel-item {
+    min-height: 81vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(61, 61, 61);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 30px;
+    color: white;
+    vertical-align: middle;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 30px;
+    color: white;
+    vertical-align: middle;
+}
+
+.button-style {
+    background-color: #f08632;
+    color: white;
+    border-radius: 0;
+    font-size: 1.5em;
+}
+
+.hover-animate {
+    transition: 0.5s all ease-in-out;
+}
+
+.hover-animate:hover {
+    transform: scale(1.2);
+}
+
+.bordering {
+    border: 2px dotted #f08632;
+}
+
+.progress {
+    background-color: rgba(206, 205, 205, 0.568);
+    color: rgb(255, 255, 255);
+    height: 10px;
+    border-radius: 0px;
+}
+
+.progress-bar {
+    background-color: black;
+}
+
+.adding {
+    overflow: auto;
+}
+
+.add-padding {
+    padding-right: 15%;
+}
+
+.add-padding:hover {
+    border-radius: 50%;
+}
+
+.adding::-webkit-scrollbar {
+    display: none;
+}
+
+.adding {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+form input {
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.card-test-1 {
+    background-color: white;
+}
+
+@media (min-width:992px) {
+    .trans {
+        transform: translateY(-70px);
+    }
+    .do {
+        transform: translateY(30px);
+    }
+}
+
+.footer-1 {
+    background-image: url(images/footer-bg.jpg);
+    background-position: center center;
+}
+
+.content-3 input {
+    background-color: rgba(255, 255, 255, 0.26);
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    width: 100%;
+    margin: 0;
+}
+
+.content-3 input::placeholder {
+    color: white;
+}
+
+.si1 {
+    color: white;
+    font-size: 20px;
+    /* background: transparent; */
+    /* background-color: rgba(5, 5, 5, 0.452); */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.s1::before {
+    color: white;
+}
+
+.back {
+    background-image: url(images/team-1.jpg);
+    height: 350px;
+    width: 250px;
+    background-position: center center;
+    position: relative;
+    margin: 10px 10px;
+}
+
+.back:nth-child(even) {
+    background-image: url(images/team-2.jpg);
+}
+
+.top {
+    background-color: rgba(255, 255, 255, 0.904);
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 0px;
+    transition: all 0.2s linear;
+    height: 0px;
+    margin-top: 350px;
+    overflow: hidden;
+}
+
+.back:hover .top {
+    margin-top: 210px;
+    padding-top: 20px;
+    height: 140px;
+}
+
+@media (min-width:992px) {
+    .res-border-1 {
+        border-left: 1px solid rgba(185, 183, 183, 0.651);
+    }
+}
+
+@media (min-width:576px) {
+    .res-border-2 {
+        border-right: 1px solid rgba(185, 183, 183, 0.651);
+    }
+}
+
+.add_to_cart_button {
+    border: none;
+    background: linear-gradient(to right, #f5914e, #e85826);
+    color: #fff;
+    border-radius: 18px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.add_minus_button {
+    background: linear-gradient(to right, #f5914e, #e85826);
+    border-radius: 18px;
+    display: none;
+}
+
+.add_minus_button_in_cart {
+    background: white;
+    border-radius: 18px;
+    border: 0.5px solid rgb(128, 128, 128);
+}
+
+.add_minus_button span {
+    color: white;
+    border-radius: 50%;
+}
+
+.minus_button,
+.plus_button {
+    border: none;
+    /* background: #f1a85e; */
+    background: none;
+    color: #fff;
+    padding: 1px 9px;
+    transform: scale(1.5);
+}
+
+.minus_button:focus,
+.plus_button:focus,
+.add_to_cart_button:focus,
+.cart-small button:focus,
+.style_remove_button:focus,
+.place_order_button:focus,
+.coupon_button:focus {
+    border: 0;
+    outline: none;
+}
+
+.style_remove_button {
+    border: none;
+    background: none;
+    color: white;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: -2px;
+}
